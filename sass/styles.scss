@@ -406,6 +406,29 @@ Intro
     height: auto;
   }
 }
+
+#img-story {
+  width: 100%;
+  max-width: 31%;
+  height: auto;
+  float: right;
+  padding-right: 7%;
+  margin-bottom: -8%;
+  margin-top: -6%;
+}
+
+#img-story-stephen {
+  width: 100%;
+  max-width: 31%;
+  height: auto;
+  float: left;
+  padding-right: 5%;
+  padding-left: 1%;
+  margin-bottom: -10%;
+  margin-top: -13%;
+  margin-left: 17%;
+}
+
 #intro p {
   text-align: right;
 }
