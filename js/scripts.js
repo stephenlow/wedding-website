@@ -152,7 +152,7 @@ $(document).ready(function () {
     po.type = 'text/javascript';
     po.async = true;
     po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0];
+    var s = document.getElementsByTagName('script')[1];
     s.parentNode.insertBefore(po, s);
 
     for (var i = 0; i < share_bar.length; i++) {
@@ -216,6 +216,81 @@ $(document).ready(function () {
 
     $('#add-to-cal').html(myCalendar);
 
+    /********************** Countdown timer *****************/
+
+    var countdown_html = document.getElementsByClassName("countdown");
+    var p1 = document.createElement('script');
+    p1.type = 'text/javascript';
+    p1.async = true;
+    var sc = document.getElementsByTagName('script')[0];
+    sc.parentNode.insertBefore(p1, sc);
+
+    function countdown() {
+
+        var return_string = '';
+        var today = new Date();
+        var weddingDate = new Date('July 30, 2021 00:00:00');
+        var ms = weddingDate - today;
+
+        if (ms > 0) {
+            var d = ms / (1000 * 60 * 60 * 24) | 0;
+            var h = ms % (1000 * 60 * 60 * 24) / (1000 * 60 * 60) | 0;
+            var m = ms % (1000 * 60 * 60) / (1000 * 60) | 0;
+            var s = ms % (1000 * 60) / (1000) | 0;
+
+            var timeParts = [d, h, m, s];
+    //        console.log(timeParts);
+            var timeStringParts = new Array();
+            var timeString = "";
+
+            for (var i = 0; i < 4; i++) {
+
+                switch (i) {
+                    case 0:
+                        timeString = " Day";
+                        break;
+                    case 1:
+                        timeString = " Hr";
+                        break;
+                    case 2:
+                        timeString = " Min";
+                        break;
+                    case 3:
+                        timeString = " Sec";
+                        break;
+                }
+                
+
+                if (timeParts[i] > 1) {
+                    timeString += 's';
+                }
+
+                if (timeParts[i] > 0) {
+                    timeStringParts.push(timeParts[i] + timeString);
+                }
+
+            }
+
+            for (var i = 0; i < timeStringParts.length - 1; i++) {
+
+                return_string += timeStringParts[i] + ', ';
+            }
+
+            return_string += (' and ' + timeStringParts[timeStringParts.length - 1])
+
+        } 
+        else {
+            return_string = "It's finally here!";
+        }
+
+        return return_string;
+    }
+
+    setInterval(function() {
+        for (var i = 0; i < countdown_html.length; i++) {
+            countdown_html[i].innerHTML = '<h4>' + countdown() + '</h4>';
+        }
+    }, 500);
 
     /********************** RSVP **********************/
     $('#rsvp-form').on('submit', function (e) {
