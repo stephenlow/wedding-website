@@ -11,7 +11,7 @@ function doPost(e) {
     
     var mailData = e.parameters; // just create a slightly nicer variable name for the data
     
-    if (mailData.invite_code != "271117") { // validate invite code before saving data
+    if (mailData.invite_code != "202107") { // validate invite code before saving data
       Logger.log("Incorrect Invite Code");
       return ContentService
           .createTextOutput(JSON.stringify({"result":"error", "message": "Sorry, your invite code (" + mailData.invite_code + ") is incorrect."}))
