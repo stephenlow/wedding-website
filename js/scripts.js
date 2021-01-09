@@ -324,12 +324,13 @@ $(document).ready(function () {
 
 /********************** Extras **********************/
 
-// Google map
+// Google map for Deer Creek
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: 43.9105171, lng: -79.0258015};
+    var location_cent = {lat: 43.9108263, lng: -79.0451563};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: location,
+        center: location_cent,
         scrollwheel: false
     });
 
@@ -339,16 +340,17 @@ function initMap() {
     });
 }
 
+//This could be initmap for church
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var church = {lat: 43.8576049, lng: -79.330451};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: la_fiesta,
+        center: church,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: la_fiesta,
+        position: church,
         map: map
     });
 }
