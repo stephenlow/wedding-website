@@ -194,7 +194,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Theresa & Stephen's Wedding",
+            title: "Theresa and Stephen's Wedding",
 
             // Event start date
             start: new Date('Jul 30, 2021 13:00'),
@@ -207,10 +207,10 @@ $(document).ready(function () {
             end: new Date('Jul 31, 2021 01:00'),
 
             // Event Address
-            address: 'Deer Creek Banquet Facility, Ajax, Ontario',
+            address: 'Deer Creek Banquet Facility, 2700 Audley Rd, Ajax, ON L1Z 1T7, Canada',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Stephen Low at +1 718-290-7573."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Stephen Low at 718-290-7573."
         }
     });
 
