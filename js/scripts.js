@@ -210,7 +210,7 @@ $(document).ready(function () {
             address: 'Deer Creek Banquet Facility, 2700 Audley Rd, Ajax, ON L1Z 1T7, Canada',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Stephen Low at 718-290-7573."
+            description: "We can't wait to see you on our big day! For further information, please refer back to our website https://www.marriagebaos.com."
         }
     });
 
