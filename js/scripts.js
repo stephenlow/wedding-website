@@ -207,7 +207,7 @@ $(document).ready(function () {
             end: new Date('Jul 31, 2021 01:00'),
 
             // Event Address
-            address: 'Deer Creek Banquet Facility, 2700 Audley Rd, Ajax, ON L1Z 1T7, Canada',
+            address: 'The Wagner Residence, 20790 Hwy 48, Mt. Albert ON, L0G 1M0 Canada',
 
             // Event Description
             description: "We can't wait to see you on our big day! For further information, please refer back to our website https://www.marriagebaos.com."
@@ -326,8 +326,8 @@ $(document).ready(function () {
 
 // Google map for Deer Creek
 function initMap() {
-    var location = {lat: 43.9105171, lng: -79.0258015};
-    var location_cent = {lat: 43.9108263, lng: -79.0451563};
+    var location = {lat: 44.1723185, lng: -79.3326065};
+    var location_cent = {lat: 44.172318, lng: -79.3505929};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location_cent,
