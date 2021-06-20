@@ -516,6 +516,21 @@
                       action=""
                       method="POST">
                     <div class="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="yes" id="flexCheckDefault" name="attending">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                &nbsp I will be attending                            
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="no" id="flexCheckDefault" name="not_attending">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                &nbsp I will be not be attending                            
+                            </label>
+                        </div>
+                    </div>
+                    <br>  
+                    <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
@@ -537,30 +552,30 @@
                                 <i class="fa fa-users"></i><input type="number" name="family_size" class="" min="0"
                                                                   max="4"
                                                                   placeholder="Number of guests"
-                                                                  required>
+                                                                  >
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-vcard-o"></i><input name="vaccine_status" class=""
                                                                   placeholder="Vaccine status"
-                                                                  required>
+                                                                  >
                             </div>
                         </div>
                     </div>
                     <br>
                     <p>For your entrée selection, please specify meat or fish with the initials of those in your party. E.g., Meat (SL), Fish (TA). Or Meat (SL, TA)</p>
                     <div class="row">
-                        <div class="col-md-12 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">  
                                 <i class="fa fa-cutlery"></i><input name="entree_choice" class="" list="foodtype"
                                                                   placeholder="Choice of entrée"
-                                                                  required>       
+                                                                  >       
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 col-sm-6">
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
