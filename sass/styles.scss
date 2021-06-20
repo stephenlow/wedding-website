@@ -595,6 +595,14 @@ Features-stack
   }
 
   .time {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: lowercase;
+    color: $txt-primary;
+  }
+
+  .time2 {
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
@@ -610,7 +618,7 @@ Features-stack
     text-align: center;
   }
 
-  .time {
+  .time2 {
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
@@ -871,7 +879,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, i.fa-vcard-o {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, i.fa-vcard-o, i.fa-cutlery {
         font-size: 14px;
         position: absolute;
         top: 50%;
