@@ -614,6 +614,15 @@ Features-stack
 .announcements
 ========================================================================== */
 .announcements {
+  img {
+    width: 20%;
+    height: 20%;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
   .leftcol {
     text-align: center;
   }
@@ -624,6 +633,7 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
+  font-size: 15px;
 }
 
 /* ==========================================================================
